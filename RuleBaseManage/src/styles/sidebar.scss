@@ -1,0 +1,29 @@
+.el-menu--collapse {
+  .el-submenu {
+    &>.el-submenu__title {
+      &>span {
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+        display: inline-block;
+      }
+      &>.el-submenu__icon-arrow{
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.sidebar-container .nest-menu .el-submenu>.el-submenu__title,
+  .sidebar-container .el-submenu .el-menu-item {
+    // min-width: 180px !important;
+    padding-left:60px !important;
+    // background-color: $subMenuBg !important;
+    &:hover {
+      // background-color: $menuHover !important;
+    }
+}
+.router-link-active>.el-menu-item>span{
+  color:#f85258
+} 
